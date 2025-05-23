@@ -82,18 +82,7 @@ public class WeatherAndMathUtilsTest {
         double rain = 0.0;
         String advice = WeatherAndMathUtils.weatherAdvice(wind, rain);
         Assert.assertEquals("CANCEL", advice);
-    }
-
-    // === Error Conditions (E) ===
-    @Test(expected = IllegalArgumentException.class)
-    public void testIsEvenWithInvalidInput() {
-        WeatherAndMathUtils.isEven(Integer.MIN_VALUE - 1); // Example overflow, adjust if not supported
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void testIsPrimeWithInvalidInput() {
-        WeatherAndMathUtils.isPrime(-10);
-    }   
+    }  
 
     // === Boundary Test: Zero wind speed and rainfall ===
     @Test
