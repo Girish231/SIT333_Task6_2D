@@ -15,7 +15,7 @@ public class WeatherAndMathUtils {
 	 */
 	public static String weatherAdvice(double windSpeed, double precipitation) {
 		if (windSpeed < 0 || precipitation < 0) {
-			throw new IllegalArgumentException("Wind speed and precipitation must be non-negative");
+		    throw new IllegalArgumentException("Wind speed and precipitation must be non-negative");
 		}
 
 		String advice = "ALL CLEAR";
